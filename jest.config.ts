@@ -1,7 +1,7 @@
 export default {
   projects: [
-    '<rootDir>/client/jest.config.js',
-    '<rootDir>/server/jest.config.js'
+    '<rootDir>/client/jest.config.ts',
+    '<rootDir>/server/jest.config.ts'
   ],
   testEnvironment: 'node',
   collectCoverage: true,

@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+
+    /* Module resolution */
+    "moduleResolution": "node", // Standard Node.js resolution
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+
+    /* Strictness */
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Source maps */
+    "sourceMap": true,
+    
+    "baseUrl": ".", // Required for `paths` to work
+    "paths": {
+      "@server/*": ["server/*"],
+      "@routes/*": ["server/routes/*"],
+      "@controllers/*": ["server/controllers/*"],
+      "@models/*": ["server/models/*"],
+      "@services/*": ["server/services/*"],
+      "@middleware/*": ["server/middleware/*"],
+      "@utils/*": ["server/utils/*"]
+    }
+  },
+  "include": ["vite.config.ts", "server/**/*.ts"],// Include all .ts files in the server directory
+  "exclude": ["node_modules"]
+}
