@@ -20,12 +20,22 @@ This project implements a Know Your Customer (KYC) system with a client-server a
    yarn start:client
    ```
 
-3. **Run the server**:
+3. **Run the migrations**:
+Make sure MySQL Server is running locally. After that run migrations.
+   ```bash
+   yarn workspace server migrate:up
+   ```
+To down the migrations you can use following command.
+   ```bash
+   yarn workspace server migrate:down
+   ```
+
+4. **Run the server**:
    ```bash
    yarn start:server
    ```
 
-4. **Run tests**:
+5. **Run tests**:
    ```bash
    yarn test
    ```
