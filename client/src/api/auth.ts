@@ -1,4 +1,3 @@
-import { AxiosResponse } from 'axios';
 import apiClient from './index';
 
 export const registerUser = async (data: {
