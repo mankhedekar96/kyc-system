@@ -5,6 +5,7 @@
     "client",
     "server"
   ],
+  "license": "MIT",
   "scripts": {
     "start:client": "yarn workspace client dev",
     "start:server": "yarn workspace server dev",

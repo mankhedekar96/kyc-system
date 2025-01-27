@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Base configuration for Axios
 const apiClient = axios.create({
-  baseURL: import.meta.env.REACT_APP_API_BASE_URL || 'http://localhost:5174/', // Adjust base URL as needed
+  baseURL: import.meta.env.VITE_APP_API_BASE_URL || 'http://localhost:5174/', // Adjust base URL as needed
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',

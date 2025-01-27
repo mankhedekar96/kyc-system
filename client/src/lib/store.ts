@@ -22,7 +22,6 @@ export const useAuthStore = create<AuthState>((set) => ({
   user: null,
   isAdmin: false,
   setUser: (user) => {
-    console.log('store user', user);
     set({ user, isAdmin: user?.role === "admin" })
   },
   signOut: async () => {
